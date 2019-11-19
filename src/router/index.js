@@ -70,6 +70,11 @@ export const constantRoutes = [
       name: 'longSelect',
       component: () => import('@/views/table/longSelect'),
       meta: { title: '超长下拉', icon: 'tree' }
+    },{
+      path: '/roleMenu',
+      name: 'roleMenu',
+      component: () => import('@/views/roleManage/roleMenu'),
+      meta: { title: '菜单平铺', icon: 'example' }
     }]
   },
   {
