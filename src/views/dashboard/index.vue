@@ -163,56 +163,10 @@
         count: -1,
         loading: false,
         loadLimit: 10,
-        animalList: [{
-          imgUrl: 'https://s1.52poke.wiki/wiki/thumb/2/21/001Bulbasaur.png/300px-001Bulbasaur.png',
-          HP: parseInt(Math.random() * 500),
-          AD: parseInt(Math.random() * 500),
-          WF: parseInt(Math.random() * 500),
-          TF: parseInt(Math.random() * 500),
-          AP: parseInt(Math.random() * 500),
-          SP: parseInt(Math.random() * 500),
-        }, {
-          imgUrl: 'https://s1.52poke.wiki/wiki/thumb/a/ae/003Venusaur.png/300px-003Venusaur.png',
-          HP: parseInt(Math.random() * 500),
-          AD: parseInt(Math.random() * 500),
-          WF: parseInt(Math.random() * 500),
-          TF: parseInt(Math.random() * 500),
-          AP: parseInt(Math.random() * 500),
-          SP: parseInt(Math.random() * 500),
-        }, {
-          imgUrl: 'https://s1.52poke.wiki/wiki/thumb/7/73/004Charmander.png/300px-004Charmander.png',
-          HP: parseInt(Math.random() * 500),
-          AD: parseInt(Math.random() * 500),
-          WF: parseInt(Math.random() * 500),
-          TF: parseInt(Math.random() * 500),
-          AP: parseInt(Math.random() * 500),
-          SP: parseInt(Math.random() * 500),
-        }, {
-          imgUrl: 'https://s1.52poke.wiki/wiki/thumb/7/7e/006Charizard.png/300px-006Charizard.png',
-          HP: parseInt(Math.random() * 500),
-          AD: parseInt(Math.random() * 500),
-          WF: parseInt(Math.random() * 500),
-          TF: parseInt(Math.random() * 500),
-          AP: parseInt(Math.random() * 500),
-          SP: parseInt(Math.random() * 500),
-        }, {
-          imgUrl: 'https://s1.52poke.wiki/wiki/thumb/3/39/007Squirtle.png/300px-007Squirtle.png',
-          HP: parseInt(Math.random() * 500),
-          AD: parseInt(Math.random() * 500),
-          WF: parseInt(Math.random() * 500),
-          TF: parseInt(Math.random() * 500),
-          AP: parseInt(Math.random() * 500),
-          SP: parseInt(Math.random() * 500),
-        }, {
-          imgUrl: 'https://s1.52poke.wiki/wiki/thumb/0/02/009Blastoise.png/300px-009Blastoise.png',
-          HP: parseInt(Math.random() * 500),
-          AD: parseInt(Math.random() * 500),
-          WF: parseInt(Math.random() * 500),
-          TF: parseInt(Math.random() * 500),
-          AP: parseInt(Math.random() * 500),
-          SP: parseInt(Math.random() * 500),
-        }],
-        displayList: []
+        displayList: [],
+        photoUrl: 'https://www.serebii.net/sunmoon/pokemon/',
+        photoIndex: 1, // 图片索引
+        photoLink: ''
       }
     },
     watch: {
@@ -267,37 +221,37 @@
           setTimeout(() => {
             self.count += 3
             self.displayList.push({
-              imgUrl1: self.animalList[self.count % 6].imgUrl,
-              imgUrl2: self.animalList[(self.count + 1) % 6].imgUrl,
-              HP1: self.animalList[self.count % 6].HP,
-              HP2: self.animalList[(self.count + 1) % 6].HP,
-              AD1: self.animalList[self.count % 6].AD,
-              AD2: self.animalList[(self.count + 1) % 6].HADP,
-              WF1: self.animalList[self.count % 6].WF,
-              WF2: self.animalList[(self.count + 1) % 6].WF,
-              TF1: self.animalList[self.count % 6].TF,
-              TF2: self.animalList[(self.count + 1) % 6].TF,
-              SP1: self.animalList[self.count % 6].SP,
-              SP2: self.animalList[(self.count + 1) % 6].SP,
-              AP1: self.animalList[self.count % 6].AP,
-              AP2: self.animalList[(self.count + 1) % 6].AP,
+              imgUrl1: self.photoUrl + (Array(3).join(0) + (parseInt(self.photoIndex++))).slice(-3) + '.png',
+              imgUrl2: self.photoUrl + (Array(3).join(0) + (parseInt(self.photoIndex++))).slice(-3) + '.png',
+              HP1: parseInt(Math.random() * 500),
+              HP2: parseInt(Math.random() * 500),
+              AD1: parseInt(Math.random() * 500),
+              AD2: parseInt(Math.random() * 500),
+              WF1: parseInt(Math.random() * 500),
+              WF2: parseInt(Math.random() * 500),
+              TF1: parseInt(Math.random() * 500),
+              TF2: parseInt(Math.random() * 500),
+              SP1: parseInt(Math.random() * 500),
+              SP2: parseInt(Math.random() * 500),
+              AP1: parseInt(Math.random() * 500),
+              AP2: parseInt(Math.random() * 500),
               key: Math.random()
             })
             self.displayList.push({
-              imgUrl1: self.animalList[(self.count + 2) % 6].imgUrl,
-              imgUrl2: self.animalList[(self.count + 3) % 6].imgUrl,
-              HP1: self.animalList[(self.count + 2) % 6].HP,
-              HP2: self.animalList[(self.count + 3) % 6].HP,
-              AD1: self.animalList[(self.count + 2) % 6].AD,
-              AD2: self.animalList[(self.count + 3) % 6].AD,
-              WF1: self.animalList[(self.count + 2) % 6].WF,
-              WF2: self.animalList[(self.count + 3) % 6].WF,
-              TF1: self.animalList[(self.count + 2) % 6].TF,
-              TF2: self.animalList[(self.count + 3) % 6].TF,
-              SP1: self.animalList[(self.count + 2) % 6].SP,
-              SP2: self.animalList[(self.count + 3) % 6].SP,
-              AP1: self.animalList[(self.count + 2) % 6].AP,
-              AP2: self.animalList[(self.count + 3) % 6].AP,
+              imgUrl1: self.photoUrl + (Array(3).join(0) + (parseInt(self.photoIndex++))).slice(-3) + '.png',
+              imgUrl2: self.photoUrl + (Array(3).join(0) + (parseInt(self.photoIndex++))).slice(-3) + '.png',
+              HP1: parseInt(Math.random() * 500),
+              HP2: parseInt(Math.random() * 500),
+              AD1: parseInt(Math.random() * 500),
+              AD2: parseInt(Math.random() * 500),
+              WF1: parseInt(Math.random() * 500),
+              WF2: parseInt(Math.random() * 500),
+              TF1: parseInt(Math.random() * 500),
+              TF2: parseInt(Math.random() * 500),
+              SP1: parseInt(Math.random() * 500),
+              SP2: parseInt(Math.random() * 500),
+              AP1: parseInt(Math.random() * 500),
+              AP2: parseInt(Math.random() * 500),
               key: Math.random()
             })
             self.loading = false
@@ -381,7 +335,7 @@
 
       getOptionData() {
         let self = this
-        setInterval(function () {
+        let timeOut = setInterval(function () {
           self.values = (Math.random() * 100).toFixed(2) - 0
           self.lineX.shift();
           self.lineX.push(++self.year + '年')
@@ -390,6 +344,9 @@
           self.lineValue[1].shift()
           self.lineValue[1].push(parseInt(Math.random() * 700))
         }, 2000);
+        setTimeout(() => {
+          window.clearInterval(timeOut)
+        }, 2000 * 30 * 2)
       },
 
       drawLine() {
