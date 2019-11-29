@@ -103,6 +103,19 @@ export const constantRoutes = [
       meta: { title: '按钮权限', icon: 'example' }
     }]
   },
+  {
+    path: '/haveFun',
+    component: Layout,
+    redirect: '/game1',
+    name: 'haveFun',
+    meta: { title: '开心一下', icon: 'funny' },
+    children: [{
+      path: '/game1',
+      name: 'game1',
+      component: () => import('@/views/games/Game1'),
+      meta: { title: '小游戏1', icon: 'funny' }
+    }]
+  },
 
   // 404 page must be placed at the end !!!
   { path: '*', redirect: '/404', hidden: true }

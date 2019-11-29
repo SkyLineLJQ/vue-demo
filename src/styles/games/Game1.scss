@@ -1,0 +1,36 @@
+p {
+    color: #333333;
+    text-align: left;
+}
+
+.userArea {
+    height: 100%;
+    width: 25%;
+    border-right: 1px dashed#666666;
+}
+
+.roobotsArea {
+    height: 100%;
+    width: 25%;
+    border-left: 1px dashed #666666
+}
+
+.publicArea {
+    height: auto;
+    width: 50%;
+    margin-top: 6%;
+    flex: 1;
+}
+
+.user-card {
+    margin-top: 40%;
+}
+
+.button-number {
+    padding: 10px;
+}
+
+.progress {
+    display: flex;
+    justify-content: center;
+}

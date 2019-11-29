@@ -162,7 +162,7 @@
         year: 2018,
         count: -1,
         loading: false,
-        loadLimit: 10,
+        loadLimit: 50,
         displayList: [],
         photoUrl: 'https://www.serebii.net/sunmoon/pokemon/',
         photoIndex: 1, // 图片索引

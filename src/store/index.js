@@ -5,6 +5,7 @@ import app from './modules/app'
 import settings from './modules/settings'
 import user from './modules/user'
 import buttonPermissions from './modules/buttonPermissions'
+import game1 from './modules/game1'
 
 Vue.use(Vuex)
 
@@ -13,7 +14,8 @@ const store = new Vuex.Store({
     app,
     settings,
     user,
-    buttonPermissions
+    buttonPermissions,
+    game1
   },
   getters
 })
