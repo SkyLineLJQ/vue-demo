@@ -65,12 +65,12 @@ export const constantRoutes = [
       name: 'table',
       component: () => import('@/views/table/table'),
       meta: { title: '超长表格', icon: 'table' }
-    },{
+    }, {
       path: '/LongSelect',
       name: 'longSelect',
       component: () => import('@/views/table/longSelect'),
       meta: { title: '超长下拉', icon: 'tree' }
-    },{
+    }, {
       path: '/roleMenu',
       name: 'roleMenu',
       component: () => import('@/views/roleManage/roleMenu'),
@@ -114,6 +114,12 @@ export const constantRoutes = [
       name: 'game1',
       component: () => import('@/views/games/Game1'),
       meta: { title: '小游戏1', icon: 'funny' }
+    },
+    {
+      path: '/pokemonList',
+      name: 'pokemonList',
+      component: () => import('@/views/pokemon/pokemonTable'),
+      meta: { title: '全国图鉴', icon: 'table' }
     }]
   },
 

@@ -1,0 +1,135 @@
+.mainBoard {
+  display: flex;
+  margin: -2%;
+}
+
+.skillTable {
+  display: flex;
+  margin: 3% -2% 2% -2%;
+}
+
+.left-board {
+  width: 70%;
+  margin-right: 15px;
+}
+
+.right-board {
+  width: 30%;
+  border: 1px solid #40c60a;
+  background-color: #77cc55;
+}
+.pokemon-title{
+  border: 1px solid #40c60a;
+  margin: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 14px;
+}
+.pokemon-index{
+  border: 1px solid #40c60a;
+  margin: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 44px;
+  p {
+    font-weight: bold;
+  }
+}
+.poke-img{
+  width: 100%;
+  height: 350px;
+  margin: 10px;
+  background-color: #fff;
+  border: 1px solid #40c60a;
+  border-radius: 10px;
+}
+.pokemon-property{
+  width: 100%;
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid #40c60a;
+  margin: 10px;
+  border-radius: 10px;
+  label{
+    display: block;
+    margin: 2px;
+  }
+  div {
+    margin: 2px;
+    background-color: #bdffa3;
+    border: 1px solid #40c60a;
+    border-radius: 10px;
+    span {
+      width: 80px;
+      display: inline-block;
+      border: 1px solid #7f7265;
+      border-radius: 10px;
+      margin: 5px;
+      color: #fff;
+      line-height: 24px;
+    }
+  }
+}
+.pokemon-feature{
+  width: 100%;
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid #40c60a;
+  margin: 10px;
+  border-radius: 10px;
+  label{
+    display: block;
+    margin: 2px;
+  }
+  div {
+    margin: 2px;
+    background-color: #bdffa3;
+    border: 1px solid #40c60a;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    span {
+      width: 100%;
+      display: inline-block;
+      border: 1px solid #7f7265;
+      border-radius: 10px;
+      margin: 5px;
+      color: #000;
+      background-color: #fff;
+      line-height: 32px;
+    }
+  }
+}
+.pokemon-area{
+  width: 100%;
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid #40c60a;
+  margin: 10px;
+  border-radius: 10px;
+  label{
+    display: block;
+    margin: 2px;
+  }
+  div {
+    margin: 2px;
+    background-color: #bdffa3;
+    border: 1px solid #40c60a;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    span {
+      width: 100%;
+      display: inline-block;
+      border: 1px solid #7f7265;
+      border-radius: 10px;
+      margin: 5px;
+      color: #0c0c0c;
+      line-height: 32px;
+    }
+  }
+}

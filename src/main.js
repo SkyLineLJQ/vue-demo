@@ -5,7 +5,7 @@ import 'normalize.css/normalize.css' // A modern alternative to CSS resets
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 import locale from 'element-ui/lib/locale/lang/en' // lang i18n
-import i18n from './assets/translate/i18n/i18n';
+import i18n from './assets/translate/i18n/i18n'
 
 import '@/styles/index.scss' // global css
 
@@ -13,9 +13,9 @@ import App from './App'
 import store from './store'
 import router from './router'
 import Directives from './directives'
-import echarts from "echarts";
-import 'echarts-gl';
-import elTableInfiniteScroll from 'el-table-infinite-scroll';
+import echarts from 'echarts'
+import 'echarts-gl'
+import elTableInfiniteScroll from 'el-table-infinite-scroll'
 
 import '@/icons' // icon
 import '@/permission' // permission control
@@ -41,12 +41,12 @@ Vue.use(ElementUI, { locale })
 Vue.use(Directives)
 Vue.use(elTableInfiniteScroll)
 Vue.config.productionTip = false
-Vue.prototype.$echarts = echarts;
+Vue.prototype.$echarts = echarts
 
 new Vue({
   el: '#app',
   router,
   store,
-  i18n, //很重要，别忘记
+  i18n, // 很重要，别忘记
   render: h => h(App)
 })
